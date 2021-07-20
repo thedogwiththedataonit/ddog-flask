@@ -15,53 +15,91 @@
 <header class="header">
 
     <div class="title">
-        <h1>Datadog
-            <img class="logo" src="https://symbols.getvecta.com/stencil_78/21_datadog.de25ce0081.svg" alt="Datadog Logo" style="width:200px;height:60px;"/>
-        <br/>Intern Project</h1>
+        <h1>Datadog Intern Project
+            <img href="https://www.datadoghq.com/blog/monitoring-flask-apps-with-datadog/" class="logo" src="https://symbols.getvecta.com/stencil_78/21_datadog.de25ce0081.svg" alt="Datadog Logo" style="width:260px;height:60px;"/>
+        </h1>
     
     </div>
 
 	<nav>
-        <a href="#">Home</a>
-        <a href="#">Dennit</a>
-        <a href="#">Project</a>
+        <a href="#" onClick="document.getElementById('top').scrollIntoView();">Home</a>
+        <a onClick="document.getElementById('middle').scrollIntoView();">Social</a>
+        <a onClick="document.getElementById('bottom').scrollIntoView();">Project</a>
         <div id="indicator"></div>
     </nav>
 </header>
 
 
 <body>
-    <div class="container">
+    <div class="container" id="top">
+        <div class="text">
+            <h2>Thomas Park </h2> 
+            <h3>Flask App</h3>
+            <p>Features include social posts, webscraping, and external links</p>
+            <br>
+            <button type="button" onClick="document.getElementById('middle').scrollIntoView();" >EXPLORE</button>
+        </div>
+    <!--
+        <div class="overlay">
+        </div>
+    -->
+    </div>
+
+
+
+    <div class="container2" id="middle">
         <div class="box">
             <form>
-                <span class="text-center">Hello Welcome to Thomas Park's Intern Project for Datadog</span>
+                <h1>Social</h1>
                 <br>
-                <br>
-                <br>
-                
-                <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
-                
+                <form>
+                    <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                        <label for="nme">
+                            <span>Name?</span>
+                        </label>
+                            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+                        <label for="msg">
+                            <span>Message?</span>
+                        </label>
+                    <input type="submit" value="Submit!" />
+        
+                    <br>
+        
+                </form>
+        
             </form>	
         </div>
-
         <div class="box_right">
             <form>
-                <span class="text-center_right">Click to listen to Dennit Racing's Theme Song</span>
+                <span class="text-center_right">Dennit Racing's Hype Song</span>
                 <br>
                 <link rel="preconnect" href="https://fonts.gstatic.com"> 
                 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-                <button>LISTEN NOW</button>
+                <button type="button" onclick="window.location.href = 'https://soundcloud.com/user-20458350';">LISTEN NOW</button>
             </form>	
         </div>
-
-        
-    </div>
-
-    <div class="container2">
-
     </div>
 
     
+    <div class="container3" id="bottom">
+        <div class="box_project">
+            <span class="text-center"> 
+                
+                Hello!
+                <br>
+                For my Intern Project I created a python flask web + css and html application.
+                This application will be launched on AWS Elastic Beanstalk, GCP, and Azure.
+                <br>
+                Their native monitoring solution will then be compared head to head with Datadog's 
+                monitoring solution! 
+                <br>
+                <br>
+                Feel free to create a post on the social aspect of this web app!
+            </span>
+        </div>
+    </div>
+
+
     
 
 </body>
