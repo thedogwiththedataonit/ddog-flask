@@ -23,8 +23,8 @@
 
 	<nav>
         <a href="#" onClick="document.getElementById('top').scrollIntoView();">Home</a>
-        <a onClick="document.getElementById('middle').scrollIntoView();">Social</a>
-        <a onClick="document.getElementById('bottom').scrollIntoView();">Project</a>
+        <a onClick="document.getElementById('middle').scrollIntoView();">Project</a>
+        <a onClick="document.getElementById('bottom').scrollIntoView();">Social</a>
         <div id="indicator"></div>
     </nav>
 </header>
@@ -33,9 +33,10 @@
 <body>
     <div class="container" id="top">
         <div class="text">
-            <h2>Thomas Park </h2> 
-            <h3>Flask App</h3>
-            <p>Features include social posts, webscraping, and external links</p>
+            <h2>Datadog</h2> 
+            <h1> vs</h1>
+            <h3>Native Cloud Tools</h3>
+            <p>Let's see how Datadog performs against AWS Cloudwatch, Azure Monitor, and GCP Monitor!</p>
             <br>
             <button type="button" onClick="document.getElementById('middle').scrollIntoView();" >EXPLORE</button>
         </div>
@@ -48,6 +49,97 @@
 
 
     <div class="container2" id="middle">
+        <div class="wrapper">
+            <h1>  </h1>
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://res.cloudinary.com/lumigo-production/fl_lossy,f_auto/wp-website/2019/08/cloudwatch-logs-main-image.png)">
+                                  <div class="inner">
+                                      <p>AWS</p>
+                        <span>CloudWatch</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>
+                                        Main features include a customizable dashboard, alarms,
+                                        log management, metrics monitoring, servicelens, and synthetics.
+
+                                        <br>
+
+                                        CloudWatch is closely integrated with the AWS products, offering a 
+                                        large array of system level metrics and logs that can be correlated with
+                                        the underlying credit or pricing of products.
+                
+                                    </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://pbs.twimg.com/media/E00JLeSVkAIY5Yf.png:large)">
+                                  <div class="inner">
+                                      <p>Azure</p>
+                        <span>Monitor</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>
+                                          Main features include metrics, logs, and alerts/actions. 
+                                          Ontop of this, Azure offers many customized products that go hand
+                                          in hand with Azure's monitoring service.
+
+                                          Azure monitor is also the closest to Datadog's platform aesthetically.
+
+
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://1000logos.net/wp-content/uploads/2020/05/Emblem-Google-Cloud.jpg)">
+                                  <div class="inner">
+                                      <p>GCP</p>
+                        <span>Monitor</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>
+                                          Main features include dashboards, metrics, alerting, and uptime checks.
+                                          Also is able to monitor AWS products.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>  
+           </div>
+        </div>
+    </div>
+
+    
+    <div class="container3" id="bottom">
+        <div class="box_project">
+            <span class="text-center"> 
+                
+                Hello!
+                <br>
+                For my Intern Project I created a python flask web + css and html application.
+                This application will be launched on AWS Elastic Beanstalk, GCP, and Azure.
+                <br>
+                Their native monitoring solution will then be compared head to head with Datadog's 
+                monitoring solution! 
+                <br>
+                <br>
+                Feel free to create a post on the social aspect of this web app!
+            </span>
+        </div>
+
         <div class="box">
             <form>
                 <h1>Social</h1>
@@ -78,27 +170,9 @@
                 <button type="button" onclick="window.location.href = 'https://soundcloud.com/user-20458350';">LISTEN NOW</button>
             </form>	
         </div>
-    </div>
 
-    
-    <div class="container3" id="bottom">
-        <div class="box_project">
-            <span class="text-center"> 
-                
-                Hello!
-                <br>
-                For my Intern Project I created a python flask web + css and html application.
-                This application will be launched on AWS Elastic Beanstalk, GCP, and Azure.
-                <br>
-                Their native monitoring solution will then be compared head to head with Datadog's 
-                monitoring solution! 
-                <br>
-                <br>
-                Feel free to create a post on the social aspect of this web app!
-            </span>
-        </div>
-    </div>
 
+    </div>
 
     
 
